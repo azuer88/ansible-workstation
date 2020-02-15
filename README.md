@@ -12,3 +12,6 @@ Ansible Workstation Setup
 
 ### Install Git
     sudo apt install git
+
+## Usage
+    sudo ansible-pull -U https://github.com/azuer88/ansible-workstation.git
