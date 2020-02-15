@@ -3,6 +3,6 @@
   tasks:
   - name: Install Required and option packages
     apt: 
-        name: ['build-essential', 'tree', 'htop']
+        name: ['build-essential', 'tree', 'htop', 'git']
   roles:
   - role: webarchitect609.jet_brains_toolbox
