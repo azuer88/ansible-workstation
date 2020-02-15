@@ -2,8 +2,6 @@
   become: true
   tasks:
   - name: Install Required and option packages
-    apt: name={{item}}
-    with_items:
-        - build-essential
-        - tree
+    apt: 
+        name: ['build-essential', 'tree', 'htop']
 
