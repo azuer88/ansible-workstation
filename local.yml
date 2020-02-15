@@ -1,10 +1,9 @@
 - hosts: localhost
   become: true
   tasks:
-  - name: Install Build Essential
-    apt: name=build-essential
-  - name: Download Jetbrains Toolbox
-    get_url:
-        url: https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.16.6319.tar.gz
-        dest: /tmp/jetbrains-toolbox.tar.gz
+  - name: Install Required and option packages
+    apt: name={{item}}
+    with_items:
+        - build-essential
+        - tree
 
