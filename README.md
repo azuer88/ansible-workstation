@@ -9,3 +9,6 @@ Ansible Workstation Setup
     sudo apt-add-repository ppa:ansible/ansible
     sudo apt-get update
     sudo apt-get install ansible
+
+### Install Git
+    sudo apt install git
