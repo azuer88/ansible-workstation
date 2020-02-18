@@ -6,7 +6,7 @@
         name: ['build-essential', 'autoconf', 'autoconf-archive', 'automake', 'gnu-standards', 'libtool', 'libtool-bin']
   - name: Install Required and optional packages
     apt: 
-        name: ['tree', 'htop', 'git', 'pip', 'vim-python-jedi']
+        name: ['tree', 'htop', 'git', 'python-pip', 'vim-python-jedi']
   roles:
   # - src: webarchitect609.jet_brains_toolbox
   #  version: 1.0.1
