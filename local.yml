@@ -1,9 +1,12 @@
 - hosts: localhost
   become: true
   tasks:
-  - name: Install Required and option packages
+  - name: Install development tools
+    apt:
+        name: ['build-essential', 'autoconf', 'autoconf-archive', 'automake', 'gnu-standards', 'libtool', 'libtool-bin']
+  - name: Install Required and optional packages
     apt: 
-        name: ['build-essential', 'tree', 'htop', 'git']
+        name: ['tree', 'htop', 'git', 'pip', 'vim-python-jedi']
   roles:
   # - src: webarchitect609.jet_brains_toolbox
   #  version: 1.0.1
