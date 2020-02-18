@@ -5,5 +5,5 @@
     apt: 
         name: ['build-essential', 'tree', 'htop', 'git']
   roles:
-  - src: webarchitect609.jet_brains_toolbox
-    version: 1.0.1
+  # - src: webarchitect609.jet_brains_toolbox
+  #  version: 1.0.1
